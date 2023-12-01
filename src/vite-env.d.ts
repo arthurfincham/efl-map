@@ -19,4 +19,9 @@ declare global {
     badgeLink: string;
     wikiArticle: string;
   }
+
+  interface ICoordinates {
+    lat: number;
+    lng: number;
+  }
 }

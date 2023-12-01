@@ -1,8 +1,9 @@
 interface SidebarProps {
   clubsInMap: IFootballClub[];
+  panToClub: (coords: ICoordinates) => void;
 }
 
-export default function Sidebar({ clubsInMap }: SidebarProps) {
+export default function Sidebar({ clubsInMap, panToClub }: SidebarProps) {
   return (
     <div className="flex flex-col min-h-screen min-w-[400px] bg-red-100">
       <div className="flex flex-col items-center justify-center h-[100px] w-full bg-red-300">
@@ -14,7 +15,8 @@ export default function Sidebar({ clubsInMap }: SidebarProps) {
             return (
               <div
                 key={club.uuid}
-                className="flex items-center justify-center h-[50px] w-[300px] bg-white border-2 border-gray-800 rounded-3xl my-2"
+                className="flex items-center justify-center h-[50px] w-[300px] bg-white border-2 border-gray-800 rounded-3xl my-2 cursor-pointer"
+                onClick={() => panToClub(club.stadiumCoords)}
               >
                 <img
                   src={club.badgeLink}
