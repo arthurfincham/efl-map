@@ -72,7 +72,7 @@ const App = () => {
           center={position}
           zoom={10}
           scrollWheelZoom={true}
-          style={{ minHeight: '100vh', minWidth: 'calc(100vw - 400px)' }}
+          style={{ minHeight: '100vh', minWidth: 'calc(100vw - 320px)' }}
         >
           {clubsInMap.length > 0 && (
             <ChangeView center={mapPosition} zoom={14} />
