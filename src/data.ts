@@ -1,7 +1,7 @@
 export const FullClubList: IFootballClub[] = [
   {
     uuid: 'e81739c8-efe4-4b52-bc8e-7aac5b7203df',
-    name: 'Mansfield Town F.C.',
+    name: 'Mansfield Town',
     alternativeNames: ['Mansfield Town'],
     nameWikiId: 'Q18522',
     stadium: 'Field Mill',
@@ -18,7 +18,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '3a35aead-c7b3-455c-bfb2-49b3a1c8c6fb',
-    name: 'Stockport County F.C.',
+    name: 'Stockport County',
     alternativeNames: ['Stockport County'],
     nameWikiId: 'Q18526',
     stadium: 'Edgeley Park',
@@ -35,7 +35,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '4070c580-8d60-4279-99e6-c9146ba3badd',
-    name: 'Newport County A.F.C.',
+    name: 'Newport County',
     alternativeNames: ['Newport County'],
     nameWikiId: 'Q18523',
     stadium: 'Rodney Parade',
@@ -52,7 +52,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '59d10d12-942c-4ee1-84ef-a74d52fda065',
-    name: 'Luton Town F.C.',
+    name: 'Luton Town',
     alternativeNames: ['Luton Town'],
     nameWikiId: 'Q18520',
     stadium: 'Kenilworth Road',
@@ -69,7 +69,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'd08ce52d-a9ee-4cfa-8691-4f798370f711',
-    name: 'Lincoln City F.C.',
+    name: 'Lincoln City',
     alternativeNames: ['Lincoln City'],
     nameWikiId: 'Q18519',
     stadium: 'Sincil Bank',
@@ -86,7 +86,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '2a30feae-ff94-4c24-84d2-ba7a6fea8bbb',
-    name: 'Watford F.C.',
+    name: 'Watford',
     alternativeNames: ['Watford'],
     nameWikiId: 'Q2714',
     stadium: 'Vicarage Road',
@@ -102,7 +102,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '884d7d69-3912-4e96-8386-9ac5894fb446',
-    name: 'Everton F.C.',
+    name: 'Everton',
     alternativeNames: ['Everton'],
     nameWikiId: 'Q5794',
     stadium: 'Goodison Park',
@@ -119,7 +119,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '02ad9dd5-670c-4a81-af83-00dc5b036af1',
-    name: 'Grimsby Town F.C.',
+    name: 'Grimsby Town',
     alternativeNames: ['Grimsby Town'],
     nameWikiId: 'Q18515',
     stadium: 'Blundell Park',
@@ -136,7 +136,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '3fc7b600-a3e4-4c43-bf62-cf649dc3e809',
-    name: 'Cambridge United F.C.',
+    name: 'Cambridge United',
     alternativeNames: ['Cambridge United'],
     nameWikiId: 'Q18509',
     stadium: 'Abbey Stadium',
@@ -153,7 +153,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '37068d53-e02b-4e08-8c13-21a4bcc9d77f',
-    name: 'Barrow A.F.C.',
+    name: 'Barrow',
     alternativeNames: ['Barrow'],
     nameWikiId: 'Q18507',
     stadium: 'Holker Street',
@@ -170,7 +170,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'f79492fe-94a2-488f-9c47-f3771d0beb82',
-    name: 'Salford City F.C.',
+    name: 'Salford City',
     alternativeNames: ['Salford City'],
     nameWikiId: 'Q18460',
     stadium: 'Moor Lane',
@@ -187,7 +187,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'f326159e-aeac-4837-9e6e-f746f9222f28',
-    name: 'Stevenage F.C.',
+    name: 'Stevenage',
     alternativeNames: ['Stevenage'],
     nameWikiId: 'Q9426',
     stadium: 'Broadhall Way',
@@ -204,7 +204,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '0fa31836-f53f-4a49-b240-391a3e73fd28',
-    name: 'Bradford City A.F.C.',
+    name: 'Bradford City',
     alternativeNames: ['Bradford City'],
     nameWikiId: 'Q48879',
     stadium: 'Valley Parade',
@@ -238,7 +238,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '50f56104-ee0a-4a61-873f-65ed7b26aab9',
-    name: 'Bristol Rovers F.C.',
+    name: 'Bristol Rovers',
     alternativeNames: ['Bristol Rovers'],
     nameWikiId: 'Q48925',
     stadium: 'Memorial Stadium (Bristol)',
@@ -255,7 +255,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '21b0b2d0-ba5a-49b6-93ff-2d6bfd096992',
-    name: 'Chelsea F.C.',
+    name: 'Chelsea',
     alternativeNames: ['Chelsea'],
     nameWikiId: 'Q9616',
     stadium: 'Stamford Bridge',
@@ -271,7 +271,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'f3adb5a8-1cb3-4ba5-b936-cee14358b3c7',
-    name: 'Rotherham United F.C.',
+    name: 'Rotherham United',
     alternativeNames: ['Rotherham United'],
     nameWikiId: 'Q48950',
     stadium: 'New York Stadium',
@@ -288,7 +288,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '6e348115-b6b0-4217-9464-d68412fdd550',
-    name: 'Port Vale F.C.',
+    name: 'Port Vale',
     alternativeNames: ['Port Vale'],
     nameWikiId: 'Q48948',
     stadium: 'Vale Park',
@@ -305,7 +305,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '592ee450-2e06-4bb5-8e68-9c0d62774972',
-    name: 'Fulham F.C.',
+    name: 'Fulham',
     alternativeNames: ['Fulham'],
     nameWikiId: 'Q18708',
     stadium: 'Craven Cottage',
@@ -322,7 +322,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '113b6289-7878-47d3-a38d-54bce93ba263',
-    name: 'Manchester United F.C.',
+    name: 'Manchester United',
     alternativeNames: ['Manchester United'],
     nameWikiId: 'Q18656',
     stadium: 'Old Trafford',
@@ -339,7 +339,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'ea843aa4-c1aa-494b-ae77-4bcddd2486c6',
-    name: 'Newcastle United F.C.',
+    name: 'Newcastle United',
     alternativeNames: ['Newcastle United'],
     nameWikiId: 'Q18716',
     stadium: 'St James’ Park',
@@ -356,7 +356,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '3807ad8c-6cb7-4bee-ba34-adf2a5433c0d',
-    name: 'Manchester City F.C.',
+    name: 'Manchester City',
     alternativeNames: ['Manchester City'],
     nameWikiId: 'Q50602',
     stadium: 'Etihad Stadium',
@@ -373,7 +373,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'b0d8f53e-8ee9-482d-a960-e8d0811258bb',
-    name: 'Arsenal F.C.',
+    name: 'Arsenal',
     alternativeNames: ['Arsenal'],
     nameWikiId: 'Q9617',
     stadium: 'Emirates Stadium',
@@ -389,7 +389,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'bd4e62e8-52af-4ac4-b269-f2e54b9f0720',
-    name: 'Tottenham Hotspur F.C.',
+    name: 'Tottenham Hotspur',
     alternativeNames: ['Tottenham Hotspur'],
     nameWikiId: 'Q18741',
     stadium: 'Tottenham Hotspur Stadium',
@@ -406,7 +406,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '656a2546-9fee-4791-a8f4-e3aaa1966690',
-    name: 'Aston Villa F.C.',
+    name: 'Aston Villa',
     alternativeNames: ['Aston Villa'],
     nameWikiId: 'Q18711',
     stadium: 'Villa Park',
@@ -423,7 +423,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '602bd445-4275-462f-91ee-36b711026b34',
-    name: 'Queens Park Rangers F.C.',
+    name: 'Queens Park Rangers',
     alternativeNames: ['Queens Park Rangers'],
     nameWikiId: 'Q18723',
     stadium: 'Kiyan Prince Foundation Stadium',
@@ -440,7 +440,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '2818bc62-8366-4c8b-a3a2-344558ec8adb',
-    name: 'Norwich City F.C.',
+    name: 'Norwich City',
     alternativeNames: ['Norwich City'],
     nameWikiId: 'Q18721',
     stadium: 'Carrow Road',
@@ -457,7 +457,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'f92fd034-80c2-43f7-be9c-7f65b146ed47',
-    name: 'Exeter City F.C.',
+    name: 'Exeter City',
     alternativeNames: ['Exeter City'],
     nameWikiId: 'Q48939',
     stadium: 'St James Park',
@@ -474,7 +474,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '663045c6-b555-4119-93bc-1393d3eb8938',
-    name: 'Burton Albion F.C.',
+    name: 'Burton Albion',
     alternativeNames: ['Burton Albion'],
     nameWikiId: 'Q48929',
     stadium: 'Pirelli Stadium',
@@ -491,7 +491,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '68194900-5bce-486a-a411-07e4817ed6a6',
-    name: 'Cheltenham Town F.C.',
+    name: 'Cheltenham Town',
     alternativeNames: ['Cheltenham Town'],
     nameWikiId: 'Q48932',
     stadium: 'Whaddon Road',
@@ -508,7 +508,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '57f4ca83-8a3e-4d78-89ec-36c8513d1310',
-    name: 'Reading F.C.',
+    name: 'Reading',
     alternativeNames: ['Reading'],
     nameWikiId: 'Q18729',
     stadium: 'Madejski Stadium',
@@ -524,7 +524,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'b33ff5fd-adef-44c7-a44d-098793619602',
-    name: 'Birmingham City F.C.',
+    name: 'Birmingham City',
     alternativeNames: ['Birmingham City'],
     nameWikiId: 'Q19444',
     stadium: "St Andrew's",
@@ -541,7 +541,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '60715124-b987-446d-9911-4ed1a98562a6',
-    name: 'Barnsley F.C.',
+    name: 'Barnsley',
     alternativeNames: ['Barnsley'],
     nameWikiId: 'Q19442',
     stadium: 'Oakwell',
@@ -557,7 +557,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '1d7bf841-f8fd-46cb-bedc-e4a47c517370',
-    name: 'Tranmere Rovers F.C.',
+    name: 'Tranmere Rovers',
     alternativeNames: ['Tranmere Rovers'],
     nameWikiId: 'Q19637',
     stadium: 'Prenton Park',
@@ -574,7 +574,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '431f6eca-dcdc-42d1-b523-7c19afc63d95',
-    name: 'Walsall F.C.',
+    name: 'Walsall',
     alternativeNames: ['Walsall'],
     nameWikiId: 'Q19644',
     stadium: 'Bescot Stadium',
@@ -590,7 +590,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '19f861d7-f04e-4b2f-968f-b8325573b176',
-    name: 'Accrington Stanley F.C.',
+    name: 'Accrington Stanley',
     alternativeNames: ['Accrington Stanley'],
     nameWikiId: 'Q48843',
     stadium: 'Crown Ground',
@@ -607,7 +607,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'e76babc4-1662-4086-a02d-32c7a533aea9',
-    name: 'Southampton F.C.',
+    name: 'Southampton',
     alternativeNames: ['Southampton'],
     nameWikiId: 'Q18732',
     stadium: "St Mary's Stadium",
@@ -624,7 +624,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '020c0ff2-9f90-4e7f-8331-3efd03162491',
-    name: 'Stoke City F.C.',
+    name: 'Stoke City',
     alternativeNames: ['Stoke City'],
     nameWikiId: 'Q18736',
     stadium: 'Britannia Stadium',
@@ -641,7 +641,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '15ddceed-ff82-46b4-ba0e-4bc04a318438',
-    name: 'Sunderland A.F.C.',
+    name: 'Sunderland',
     alternativeNames: ['Sunderland'],
     nameWikiId: 'Q18739',
     stadium: 'Stadium of Light',
@@ -658,7 +658,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '2101c64b-ad78-4c2f-b7ee-0ee72e94099e',
-    name: 'Blackburn Rovers F.C.',
+    name: 'Blackburn Rovers',
     alternativeNames: ['Blackburn Rovers'],
     nameWikiId: 'Q19446',
     stadium: 'Ewood Park',
@@ -675,7 +675,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '02171356-7115-45bc-8b34-b9561b109739',
-    name: 'Wigan Athletic F.C.',
+    name: 'Wigan Athletic',
     alternativeNames: ['Wigan Athletic'],
     nameWikiId: 'Q18750',
     stadium: 'DW Stadium',
@@ -692,7 +692,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '4e217deb-3202-469d-a93b-cc029ac1f816',
-    name: 'Ipswich Town F.C.',
+    name: 'Ipswich Town',
     alternativeNames: ['Ipswich Town'],
     nameWikiId: 'Q9653',
     stadium: 'Portman Road',
@@ -709,7 +709,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '16ae02e0-2a7a-4b43-80c7-ff154560a868',
-    name: 'Gillingham F.C.',
+    name: 'Gillingham',
     alternativeNames: ['Gillingham'],
     nameWikiId: 'Q48943',
     stadium: 'Priestfield Stadium',
@@ -726,7 +726,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'c7648247-3abd-4e26-9a91-674af1f7ce22',
-    name: 'Morecambe F.C.',
+    name: 'Morecambe',
     alternativeNames: ['Morecambe'],
     nameWikiId: 'Q48944',
     stadium: 'Globe Arena',
@@ -743,7 +743,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'a7eea533-d0f8-4b90-be62-910493926f75',
-    name: 'Fleetwood Town F.C.',
+    name: 'Fleetwood Town',
     alternativeNames: ['Fleetwood Town'],
     nameWikiId: 'Q48941',
     stadium: 'Highbury Stadium',
@@ -760,7 +760,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '865b51cb-7e92-488f-ba9d-2a7d91642523',
-    name: 'Blackpool F.C.',
+    name: 'Blackpool',
     alternativeNames: ['Blackpool'],
     nameWikiId: 'Q19449',
     stadium: 'Bloomfield Road',
@@ -777,7 +777,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '763c67c8-21de-4848-8f4e-faf0d7ec71d8',
-    name: 'Bolton Wanderers F.C.',
+    name: 'Bolton Wanderers',
     alternativeNames: ['Bolton Wanderers'],
     nameWikiId: 'Q19451',
     stadium: 'Toughsheet Community Stadium',
@@ -794,7 +794,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'ce06658f-87c2-4eeb-be74-640aae9e3649',
-    name: 'Charlton Athletic F.C.',
+    name: 'Charlton Athletic',
     alternativeNames: ['Charlton Athletic'],
     nameWikiId: 'Q19462',
     stadium: 'The Valley',
@@ -811,7 +811,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '39d9df73-41fe-4138-ac85-80ea98ca5183',
-    name: 'Crystal Palace F.C.',
+    name: 'Crystal Palace',
     alternativeNames: ['Crystal Palace'],
     nameWikiId: 'Q19467',
     stadium: 'Selhurst Park',
@@ -828,7 +828,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '9484d54a-6308-4f85-97ec-472e0ca9d035',
-    name: 'Burnley F.C.',
+    name: 'Burnley',
     alternativeNames: ['Burnley'],
     nameWikiId: 'Q19458',
     stadium: 'Turf Moor',
@@ -845,7 +845,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '2d2aa9a5-c457-441d-86e4-e4750ed513e9',
-    name: 'Bristol City F.C.',
+    name: 'Bristol City',
     alternativeNames: ['Bristol City'],
     nameWikiId: 'Q19456',
     stadium: 'Ashton Gate Stadium',
@@ -862,7 +862,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '3889d015-102c-4187-b195-e00fa47996af',
-    name: 'West Ham United F.C.',
+    name: 'West Ham United',
     alternativeNames: ['West Ham United'],
     nameWikiId: 'Q18747',
     stadium: 'London Stadium',
@@ -879,7 +879,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '5a728f12-4cee-4dd4-89b0-4d5dda4b8745',
-    name: 'West Bromwich Albion F.C.',
+    name: 'West Bromwich Albion',
     alternativeNames: ['West Bromwich Albion'],
     nameWikiId: 'Q18744',
     stadium: 'The Hawthorns',
@@ -896,7 +896,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'c98abe54-87b6-407a-bc01-46e18805759a',
-    name: 'Brighton & Hove Albion F.C.',
+    name: 'Brighton & Hove Albion',
     alternativeNames: ['Brighton & Hove Albion'],
     nameWikiId: 'Q19453',
     stadium: 'Brighton Community Stadium',
@@ -913,7 +913,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'cf3f39db-4a31-4422-b865-a68d64c7b409',
-    name: 'Swansea City A.F.C.',
+    name: 'Swansea City',
     alternativeNames: ['Swansea City'],
     nameWikiId: 'Q18659',
     stadium: 'Liberty Stadium',
@@ -930,7 +930,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'fc918b3a-dd88-4dff-8a12-bbb9ceb4e529',
-    name: 'Derby County F.C.',
+    name: 'Derby County',
     alternativeNames: ['Derby County'],
     nameWikiId: 'Q19470',
     stadium: 'Pride Park Stadium',
@@ -947,7 +947,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'dd9e6d74-b7fb-4359-a49f-a318e126b07b',
-    name: 'Huddersfield Town A.F.C.',
+    name: 'Huddersfield Town',
     alternativeNames: ['Huddersfield Town'],
     nameWikiId: 'Q19473',
     stadium: 'Kirklees Stadium',
@@ -964,7 +964,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'bf1d2f20-0fa2-4b38-97a6-ce05b5b1ce78',
-    name: 'Hull City A.F.C.',
+    name: 'Hull City',
     alternativeNames: ['Hull City'],
     nameWikiId: 'Q19477',
     stadium: 'MKM Stadium',
@@ -981,7 +981,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '9b30cf5b-137e-4366-bcf7-3a9d7b31eb9c',
-    name: 'Leicester City F.C.',
+    name: 'Leicester City',
     alternativeNames: ['Leicester City'],
     nameWikiId: 'Q19481',
     stadium: 'Leicester City Stadium',
@@ -998,7 +998,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '09c464d1-13d9-41ea-b780-e37087d98081',
-    name: 'Nottingham Forest F.C.',
+    name: 'Nottingham Forest',
     alternativeNames: ['Nottingham Forest'],
     nameWikiId: 'Q19490',
     stadium: 'City Ground',
@@ -1015,7 +1015,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '1758878b-b110-4b61-8dbe-ea9d1ed97dbe',
-    name: 'Millwall F.C.',
+    name: 'Millwall',
     alternativeNames: ['Millwall'],
     nameWikiId: 'Q19487',
     stadium: 'The Den',
@@ -1032,7 +1032,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'e3db91df-22e7-4ec6-b5e4-b97a4e80f31b',
-    name: 'Peterborough United F.C.',
+    name: 'Peterborough United',
     alternativeNames: ['Peterborough United'],
     nameWikiId: 'Q19495',
     stadium: 'London Road Stadium',
@@ -1049,7 +1049,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '7c8f1487-b989-4e3b-8e79-15d504ffc333',
-    name: 'Sheffield Wednesday F.C.',
+    name: 'Sheffield Wednesday',
     alternativeNames: ['Sheffield Wednesday'],
     nameWikiId: 'Q19498',
     stadium: 'Hillsborough Stadium',
@@ -1066,7 +1066,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'e5926b00-8cfc-4779-936b-297c56f6d9e2',
-    name: 'Carlisle United F.C.',
+    name: 'Carlisle United',
     alternativeNames: ['Carlisle United'],
     nameWikiId: 'Q19575',
     stadium: 'Brunton Park',
@@ -1082,7 +1082,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'b602e063-22ad-4016-99b4-d8744b3832b9',
-    name: 'Colchester United F.C.',
+    name: 'Colchester United',
     alternativeNames: ['Colchester United'],
     nameWikiId: 'Q19578',
     stadium: 'Colchester Community Stadium',
@@ -1099,7 +1099,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'ef2958a7-065b-4a8f-8e57-5b57dbd52e2c',
-    name: 'Plymouth Argyle F.C.',
+    name: 'Plymouth Argyle',
     alternativeNames: ['Plymouth Argyle'],
     nameWikiId: 'Q48947',
     stadium: 'Home Park',
@@ -1116,7 +1116,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'f66709dd-f0ea-403b-8448-7d07c15a927b',
-    name: 'Oxford United F.C.',
+    name: 'Oxford United',
     alternativeNames: ['Oxford United'],
     nameWikiId: 'Q48946',
     stadium: 'Kassam Stadium',
@@ -1133,7 +1133,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '158439a3-33af-4ca8-bde8-5ec170a83152',
-    name: 'Northampton Town F.C.',
+    name: 'Northampton Town',
     alternativeNames: ['Northampton Town'],
     nameWikiId: 'Q48945',
     stadium: 'Sixfields Stadium',
@@ -1150,7 +1150,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '5486c87a-ee19-4f83-a2fb-5e5949dc0a9d',
-    name: 'Liverpool F.C.',
+    name: 'Liverpool',
     alternativeNames: ['Liverpool'],
     nameWikiId: 'Q1130849',
     stadium: 'Anfield',
@@ -1167,7 +1167,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'cdd49f52-7ffe-4a3f-9aea-be2096bd6223',
-    name: 'Wolverhampton Wanderers F.C.',
+    name: 'Wolverhampton Wanderers',
     alternativeNames: ['Wolverhampton Wanderers'],
     nameWikiId: 'Q19500',
     stadium: 'Molineux Stadium',
@@ -1184,7 +1184,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'efd3536d-168f-4ffd-ad29-38cdae423b58',
-    name: 'Leeds United F.C.',
+    name: 'Leeds United',
     alternativeNames: ['Leeds United'],
     nameWikiId: 'Q1128631',
     stadium: 'Elland Road',
@@ -1201,7 +1201,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '4e6a350b-f5ec-4273-9235-6d38caf58a1d',
-    name: 'Cardiff City F.C.',
+    name: 'Cardiff City',
     alternativeNames: ['Cardiff City'],
     nameWikiId: 'Q18662',
     stadium: 'Cardiff City Stadium',
@@ -1218,7 +1218,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '974a4283-d837-4f4f-a108-4e13c03f69d8',
-    name: 'Middlesbrough F.C.',
+    name: 'Middlesbrough',
     alternativeNames: ['Middlesbrough'],
     nameWikiId: 'Q18661',
     stadium: 'Riverside Stadium',
@@ -1235,7 +1235,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '229804b9-1051-4767-867b-f4729315d025',
-    name: 'Crewe Alexandra F.C.',
+    name: 'Crewe Alexandra',
     alternativeNames: ['Crewe Alexandra'],
     nameWikiId: 'Q19587',
     stadium: 'Alexandra Stadium',
@@ -1252,7 +1252,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'af7aa6dd-3243-4170-a856-843dfaabf087',
-    name: 'Coventry City F.C.',
+    name: 'Coventry City',
     alternativeNames: ['Coventry City'],
     nameWikiId: 'Q19580',
     stadium: 'Ricoh Arena',
@@ -1269,7 +1269,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'a70284ad-d232-4b04-aa29-74cc7cab5a40',
-    name: 'Crawley Town F.C.',
+    name: 'Crawley Town',
     alternativeNames: ['Crawley Town'],
     nameWikiId: 'Q19584',
     stadium: 'The Peoples Pension Stadium',
@@ -1303,7 +1303,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '9ad935b5-0565-4226-ad88-6a8515ee9f45',
-    name: 'Brentford F.C.',
+    name: 'Brentford',
     alternativeNames: ['Brentford'],
     nameWikiId: 'Q19571',
     stadium: 'Griffin Park',
@@ -1320,7 +1320,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '441ce12c-cabb-4e9b-8f85-d875f62a9f68',
-    name: 'Hartlepool United F.C.',
+    name: 'Hartlepool United',
     alternativeNames: ['Hartlepool United'],
     nameWikiId: 'Q19592',
     stadium: 'Victoria Park',
@@ -1337,7 +1337,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '16677568-eaed-471f-9381-1a04a0e2527f',
-    name: 'Leyton Orient F.C.',
+    name: 'Leyton Orient',
     alternativeNames: ['Leyton Orient'],
     nameWikiId: 'Q19595',
     stadium: 'Brisbane Road',
@@ -1354,7 +1354,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'a203d0fa-47ea-42eb-ac85-ffafe8a79dc2',
-    name: 'Doncaster Rovers F.C.',
+    name: 'Doncaster Rovers',
     alternativeNames: ['Doncaster Rovers'],
     nameWikiId: 'Q19589',
     stadium: 'Keepmoat Stadium',
@@ -1371,7 +1371,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '2b86b18b-538d-4188-b97f-35eeb0327507',
-    name: 'Notts County F.C.',
+    name: 'Notts County',
     alternativeNames: ['Notts County'],
     nameWikiId: 'Q19598',
     stadium: 'Meadow Lane',
@@ -1388,7 +1388,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'f6ec5e6f-63dc-4965-92eb-c3e63151508f',
-    name: 'Portsmouth F.C.',
+    name: 'Portsmouth',
     alternativeNames: ['Portsmouth'],
     nameWikiId: 'Q19604',
     stadium: 'Fratton Park',
@@ -1405,7 +1405,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '09a7d464-a2a3-41f8-a366-7ab7e165684b',
-    name: 'Scunthorpe United F.C.',
+    name: 'Scunthorpe United',
     alternativeNames: ['Scunthorpe United'],
     nameWikiId: 'Q19615',
     stadium: 'Glanford Park',
@@ -1422,7 +1422,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'eb742a9d-e727-47e4-979b-bcdae8ff9e5f',
-    name: 'Shrewsbury Town F.C.',
+    name: 'Shrewsbury Town',
     alternativeNames: ['Shrewsbury Town'],
     nameWikiId: 'Q19626',
     stadium: 'New Meadow',
@@ -1439,7 +1439,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '81986f81-9fd6-4181-a4ef-54a91bf9dd1a',
-    name: 'Harrogate Town A.F.C.',
+    name: 'Harrogate Town',
     alternativeNames: ['Harrogate Town'],
     nameWikiId: 'Q2219286',
     stadium: 'Wetherby Road',
@@ -1456,7 +1456,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '3ab6ae8c-3e5b-4402-86c2-17b08867a523',
-    name: 'Preston North End F.C.',
+    name: 'Preston North End',
     alternativeNames: ['Preston North End'],
     nameWikiId: 'Q19612',
     stadium: 'Deepdale',
@@ -1473,7 +1473,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '2e22c1f9-23ed-40c7-812d-173d0fa02e97',
-    name: 'Sheffield United F.C.',
+    name: 'Sheffield United',
     alternativeNames: ['Sheffield United'],
     nameWikiId: 'Q19607',
     stadium: 'Bramall Lane',
@@ -1490,7 +1490,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: '0767881a-6f51-4e88-b328-d159d1a0f772',
-    name: 'Swindon Town F.C.',
+    name: 'Swindon Town',
     alternativeNames: ['Swindon Town'],
     nameWikiId: 'Q19634',
     stadium: 'County Ground, Swindon',
@@ -1507,7 +1507,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'e3d48b67-7290-4fc5-b13e-693f0b645d32',
-    name: 'Wycombe Wanderers F.C.',
+    name: 'Wycombe Wanderers',
     alternativeNames: ['Wycombe Wanderers'],
     nameWikiId: 'Q48953',
     stadium: 'Adams Park',
@@ -1524,7 +1524,7 @@ export const FullClubList: IFootballClub[] = [
   },
   {
     uuid: 'acb0a610-d5c2-4bc8-9f24-8f49956285dd',
-    name: 'Milton Keynes Dons F.C.',
+    name: 'Milton Keynes Dons',
     alternativeNames: ['Milton Keynes Dons'],
     nameWikiId: 'Q248188',
     stadium: 'Stadium MK',
