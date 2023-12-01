@@ -7,7 +7,7 @@ export default function ClubRow({ club, panToClub }: ClubRowProps) {
   return (
     <div
       key={club.uuid}
-      className="flex items-center justify-start h-[40px] w-full bg-white border-1 border-gray-800 rounded-lg my-1 cursor-pointer px-3"
+      className="flex items-center justify-start  h-[40px] w-full bg-white border border-gray-300 rounded-lg my-1 cursor-pointer px-3"
       onClick={() => panToClub(club.stadiumCoords)}
     >
       <img

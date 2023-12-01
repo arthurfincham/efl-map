@@ -7,14 +7,41 @@ interface SidebarProps {
 
 export default function Sidebar({ clubsInMap, panToClub }: SidebarProps) {
   return (
-    <div className="flex flex-col min-h-screen min-w-[320px] bg-gray-100 pr-[15px] p-4">
-      <div className="flex flex-col items-end justify-center h-[100px] px-3 w-full ">
-        <h1 className="text-4xl font-bold">92 Clubs</h1>
-        <h1 className="text-lg font-bold">
-          {92 - clubsInMap.length} remaining
-        </h1>
+    <div className="flex flex-col min-h-screen min-w-[320px] bg-gray-100 relative">
+      <svg className="absolute h-full w-full" fill="none">
+        <defs>
+          <pattern
+            id="pattern-5c1e4f0e-62d5-498b-8ff0-cf77bb448c8e"
+            x="0"
+            y="0"
+            width="10"
+            height="10"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              className="stroke-gray-300 z-0"
+              d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"
+            ></path>
+          </pattern>
+        </defs>
+        <rect
+          stroke="none"
+          fill="url(#pattern-5c1e4f0e-62d5-498b-8ff0-cf77bb448c8e)"
+          width="100%"
+          height="100%"
+        ></rect>
+      </svg>
+      <div className="flex flex-col items-end justify-center h-[120px] p-4 w-full relative z-1 pr-[15px] pb-0">
+        <h1 className="text-4xl font-bold mb-2">EFL Challenge</h1>
+        <div className="flex w-full border border-gray-300 h-[40px] bg-white justify-end items-center rounded-lg  px-3  text-right text-sm font-medium text-gray-500  my-1 relative overflow-hidden ml-4">
+          <div
+            className="absolute z-0 left-0  h-full bg-purple-200"
+            style={{ width: `${(clubsInMap.length / 92) * 100}%` }}
+          />
+          {92 - clubsInMap.length} / 92
+        </div>
       </div>
-      <div className="flex flex-col items-center justify-start h-full w-full py-4">
+      <div className="flex flex-col items-center justify-start h-full w-full py-4 relative z-1 pr-[15px] p-4 ">
         <LeagueGroup
           title="Premier League"
           clubs={clubsInMap.filter((club) => club.league === 'Premier League')}

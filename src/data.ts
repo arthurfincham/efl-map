@@ -424,7 +424,7 @@ export const FullClubList: IFootballClub[] = [
   {
     uuid: '602bd445-4275-462f-91ee-36b711026b34',
     name: 'Queens Park Rangers',
-    alternativeNames: ['Queens Park Rangers'],
+    alternativeNames: ['Queens Park Rangers', 'QPR'],
     nameWikiId: 'Q18723',
     stadium: 'Kiyan Prince Foundation Stadium',
     stadiumCoords: {
@@ -1287,7 +1287,7 @@ export const FullClubList: IFootballClub[] = [
   {
     uuid: '23e5b103-5ad2-40f5-a42f-066f05163ad4',
     name: 'AFC Bournemouth',
-    alternativeNames: ['AFC Bournemouth'],
+    alternativeNames: ['AFC Bournemouth', 'Bournemouth'],
     nameWikiId: 'Q19568',
     stadium: 'Dean Court',
     stadiumCoords: {

@@ -64,14 +64,16 @@ const App = () => {
   }, []);
 
   return (
-    <div className=" min-w-screen flex w-full h-full min-h-screen">
-      <div className="relative">
+    <div className=" min-w-screen flex w-full h-full min-h-screen relative">
+      <div className="relative ">
         <Dash addClubToMap={(club) => handleAddToMap(club)} />
 
         <MapContainer
           center={position}
-          zoom={10}
+          zoom={7}
           scrollWheelZoom={true}
+          minZoom={7}
+          maxZoom={16}
           style={{ minHeight: '100vh', minWidth: 'calc(100vw - 320px)' }}
         >
           {clubsInMap.length > 0 && (
@@ -94,6 +96,7 @@ const App = () => {
             );
           })}
         </MapContainer>
+        <div className="absolute z-[500] left-0 top-0 w-full h-full " />
       </div>
       <Sidebar
         clubsInMap={clubsInMap}
