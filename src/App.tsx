@@ -1,8 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import { data } from './data';
-
-import { Dialog } from '@headlessui/react';
-import L, { LatLngExpression } from 'leaflet';
+import L from 'leaflet';
 import { useState } from 'react';
 import Dash from './components/Dash';
 import Sidebar from './components/Sidebar';
@@ -23,21 +20,12 @@ function ChangeView({ center, zoom }) {
 const App = () => {
   const position = { lat: 51.5, lng: -0.13 };
 
-  const [clubsInMap, setClubsInMap] = useState([]);
+  const [clubsInMap, setClubsInMap] = useState<IFootballClub[]>([]);
 
   const [mapPosition, setMapPosition] = useState(position);
 
-  const getStadiumCoords = (club) => {
-    const coords = club.coordinates;
-    const regex = /Point\(([-\d.]+)\s([-\d.]+)\)/;
-    const match = coords.match(regex);
-    const longitude = parseFloat(match[1]);
-    const latitude = parseFloat(match[2]);
-    return { lat: latitude, lng: longitude };
-  };
-
   const handleAddToMap = (club) => {
-    setMapPosition(getStadiumCoords(club));
+    setMapPosition(club.stadiumCoords);
     setClubsInMap([...clubsInMap, club]);
   };
 
@@ -61,24 +49,19 @@ const App = () => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           {clubsInMap.map((club) => {
-            const coords = club.coordinates;
-            const regex = /Point\(([-\d.]+)\s([-\d.]+)\)/;
-            const match = coords.match(regex);
-            const longitude = parseFloat(match[1]);
-            const latitude = parseFloat(match[2]);
             return (
               <Marker
-                position={[latitude, longitude]}
-                key={club.clubLabel}
-                icon={createIcon('https:' + club.badgeLink)}
+                key={club.uuid}
+                position={club.stadiumCoords}
+                icon={createIcon(club.badgeLink)}
               >
-                <Popup>{club.clubLabel}</Popup>
+                <Popup>{club.name}</Popup>
               </Marker>
             );
           })}
         </MapContainer>
       </div>
-      <Sidebar />
+      <Sidebar clubsInMap={clubsInMap} />
     </div>
   );
 };
