@@ -21,7 +21,7 @@ export default function Map({
       scrollWheelZoom={true}
       minZoom={7}
       maxZoom={16}
-      style={{ minHeight: '100vh', minWidth: 'calc(100vw - 320px)' }}
+      className="map-container"
     >
       <TileLayer
         attribution='&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/about" target="_blank">OpenStreetMap</a> contributors'

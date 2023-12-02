@@ -112,3 +112,15 @@ div.vingette {
   animation: wiggle;
   animation-duration: 0.4s;
 }
+
+.map-container {
+  min-height: 100dvh;
+  min-width: 100dvw;
+}
+
+@media (min-width: 640px) {
+  .map-container {
+    min-height: 100vh;
+    min-width: calc(100vw - 320px);
+  }
+}

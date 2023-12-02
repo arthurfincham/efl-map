@@ -26,7 +26,7 @@ export default function LeagueGroup({
       {({ open }) => (
         <>
           <Disclosure.Button
-            className={`${noClubsClass} flex text-purple-900 w-full border border-gray-300 h-[40px] bg-white justify-start items-center rounded-lg  px-3  text-left text-sm font-medium  focus:outline-none focus-visible:ring focus-visible:ring-purple-500/75 my-1 relative overflow-hidden `}
+            className={`${noClubsClass} flex text-purple-900 w-full border border-gray-300 h-[40px] min-h-[40px] bg-white justify-start items-center rounded-lg  px-3  text-left text-sm font-medium  focus:outline-none focus-visible:ring focus-visible:ring-purple-500/75 my-1 relative overflow-hidden `}
           >
             <div
               className="absolute left-0 z-0 h-full bg-purple-200"

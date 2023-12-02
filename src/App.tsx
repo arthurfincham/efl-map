@@ -39,8 +39,8 @@ const App = () => {
   };
 
   return (
-    <div className="relative flex w-full h-full min-h-screen min-w-screen">
-      <div className="relative ">
+    <div className="relative flex w-full h-full max-h-[100dvh] min-h-screen min-w-screen ">
+      <div className="relative">
         <Dash
           addClubToMap={(club) => handleAddToMap(club)}
           clubsInMapIds={clubsInMapIds}
