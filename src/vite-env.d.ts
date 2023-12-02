@@ -4,20 +4,22 @@ export {};
 
 declare global {
   interface IFootballClub {
-    uuid: string;
+    id: string;
     name: string;
-    alternativeNames: string[];
-    nameWikiId: string;
     stadium: string;
-    stadiumCoords: {
+    league: string;
+    alternativeNames: string[];
+    coords: {
       lat: number;
       lng: number;
     };
-    stadiumWikiId: string;
-    league: string;
-    leagueWikiId: string;
     badgeLink: string;
-    wikiArticle: string;
+    wikiId: {
+      stadium: string;
+      club: string;
+      league: string;
+      articlePath: string;
+    };
   }
 
   interface ICoordinates {

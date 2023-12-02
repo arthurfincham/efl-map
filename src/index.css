@@ -83,3 +83,32 @@ div.vingette {
     rgba(0, 0, 0, 0.5214679621848739) 100%
   );
 }
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(-10px);
+  }
+  20% {
+    transform: translateX(15px);
+  }
+
+  40% {
+    transform: translateX(-12px);
+  }
+
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.wiggle {
+  animation: wiggle;
+  animation-duration: 0.4s;
+}

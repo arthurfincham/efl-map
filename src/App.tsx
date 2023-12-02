@@ -1,106 +1,54 @@
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import L from 'leaflet';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Dash from './components/Dash';
 import Sidebar from './components/Sidebar';
-import { FullClubList } from './data';
-
-function createIcon(url) {
-  return new L.Icon({
-    iconUrl: url,
-    iconSize: [60, 60],
-  });
-}
-
-function ChangeView({ center, zoom }) {
-  const map = useMap();
-  // map.setView(center, zoom);
-  map.flyTo(center, zoom, {
-    animate: true,
-    duration: 0.5,
-    easeLinearity: 10,
-    noMoveStart: true,
-  });
-
-  return null;
-}
+import Map from './components/Map';
+import { getProgress, updateProgress } from './utils/progressUtils';
 
 const App = () => {
   const position = { lat: 51.5, lng: -0.13 };
 
   const [clubsInMap, setClubsInMap] = useState<IFootballClub[]>([]);
 
+  const clubsInMapIds = clubsInMap.map((club) => club.id);
+
   const [mapPosition, setMapPosition] = useState(position);
 
-  const handleAddToMap = (club) => {
-    window.localStorage.setItem(
-      'efl-map-progress',
-      `${[...clubsInMap.map((club) => club.uuid), club.uuid]}`
-    );
-    window.localStorage.setItem(
-      'efl-map-location',
-      JSON.stringify(club.stadiumCoords)
-    );
+  const [zoomLevel, setZoomLevel] = useState(14);
+
+  const handleAddToMap = (club: IFootballClub) => {
+    updateProgress([...clubsInMapIds, club.id], club.coords);
     setClubsInMap([...clubsInMap, club]);
-    setMapPosition(club.stadiumCoords);
+    flyToStadium(club.coords, 14);
   };
 
   useEffect(() => {
-    if (window.localStorage.getItem('efl-map-progress')) {
-      const progress = window.localStorage
-        .getItem('efl-map-progress')
-        .split(',');
-      const clubs = progress.map((uuid) => {
-        return FullClubList.find((club) => club.uuid === uuid);
-      });
-      setClubsInMap(clubs);
-    }
-    if (window.localStorage.getItem('efl-map-location')) {
-      const location = JSON.parse(
-        window.localStorage.getItem('efl-map-location')
-      );
-      setMapPosition(location);
-    }
+    const { clubs, position } = getProgress();
+    if (clubs) setClubsInMap(clubs);
+    if (position) setMapPosition(position);
   }, []);
 
+  const flyToStadium = (coords: ICoordinates, zoom: number) => {
+    setMapPosition(coords);
+    setZoomLevel(zoom);
+  };
+
   return (
-    <div className=" min-w-screen flex w-full h-full min-h-screen relative">
+    <div className="relative flex w-full h-full min-h-screen min-w-screen">
       <div className="relative ">
-        <Dash addClubToMap={(club) => handleAddToMap(club)} />
-
-        <MapContainer
-          center={position}
-          zoom={7}
-          scrollWheelZoom={true}
-          minZoom={7}
-          maxZoom={16}
-          style={{ minHeight: '100vh', minWidth: 'calc(100vw - 320px)' }}
-        >
-          {clubsInMap.length > 0 && (
-            <ChangeView center={mapPosition} zoom={14} />
-          )}
-          <TileLayer
-            attribution='&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/about" target="_blank">OpenStreetMap</a> contributors'
-            url="https://tiles.stadiamaps.com/tiles/stamen_toner_background/{z}/{x}/{y}{r}.png"
-          />
-
-          {clubsInMap.map((club) => {
-            return (
-              <Marker
-                key={club.uuid}
-                position={club.stadiumCoords}
-                icon={createIcon(club.badgeLink)}
-              >
-                <Popup>{club.name}</Popup>
-              </Marker>
-            );
-          })}
-        </MapContainer>
-        <div className="absolute z-[500] left-0 top-0 w-full h-full " />
+        <Dash
+          addClubToMap={(club) => handleAddToMap(club)}
+          clubsInMapIds={clubsInMapIds}
+        />
+        <Map
+          clubsInMap={clubsInMap}
+          mapPosition={mapPosition}
+          zoomLevel={zoomLevel}
+          setZoomLevel={setZoomLevel}
+        />
       </div>
       <Sidebar
         clubsInMap={clubsInMap}
-        panToClub={(coords) => setMapPosition(coords)}
+        panToClub={(coords) => flyToStadium(coords, 14)}
       />
     </div>
   );

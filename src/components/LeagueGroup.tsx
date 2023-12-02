@@ -26,7 +26,7 @@ export default function LeagueGroup({
             className={`${noClubsClass} flex text-purple-900 w-full border border-gray-300 h-[40px] bg-white justify-start items-center rounded-lg  px-3  text-left text-sm font-medium  focus:outline-none focus-visible:ring focus-visible:ring-purple-500/75 my-1 relative overflow-hidden `}
           >
             <div
-              className="absolute z-0 left-0    h-full bg-purple-200"
+              className="absolute left-0 z-0 h-full bg-purple-200"
               style={{ width: `${(clubs.length / maxClubs) * 100}%` }}
             />
             <img
@@ -34,7 +34,7 @@ export default function LeagueGroup({
               alt={title}
               className=" w-[25px] h-[25px] rounded-3xl relative z-1"
             />
-            <span className="ml-2 mr-auto  relative z-1">{title}</span>
+            <span className="relative ml-2 mr-auto z-1">{title}</span>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -54,10 +54,10 @@ export default function LeagueGroup({
             </svg>
           </Disclosure.Button>
 
-          <Disclosure.Panel className="pb-2  text-sm text-gray-500 w-full">
+          <Disclosure.Panel className="w-full pb-2 text-sm text-gray-500">
             {clubs.map((club) => {
               return (
-                <ClubRow key={club.uuid} club={club} panToClub={panToClub} />
+                <ClubRow key={club.id} club={club} panToClub={panToClub} />
               );
             })}
           </Disclosure.Panel>

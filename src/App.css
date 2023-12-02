@@ -45,3 +45,20 @@
   height: 100vh;
   width: 100vw;
 }
+
+@keyframes transitionAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#overlay-for-anim {
+  animation: transitionAnim 3s ease-in-out;
+  animation-fill-mode: forwards;
+}
