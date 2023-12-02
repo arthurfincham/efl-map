@@ -2,6 +2,8 @@ import { Disclosure, Transition } from '@headlessui/react';
 import ClubRow from './ClubRow';
 import { getIcon } from '../utils/assetUtils';
 
+const SHOW_LEAGUE_ICON = false;
+
 interface LeagueGroupProps {
   title: string;
   clubs: IFootballClub[];
@@ -30,12 +32,20 @@ export default function LeagueGroup({
               className="absolute left-0 z-0 h-full bg-purple-200"
               style={{ width: `${(clubs.length / maxClubs) * 100}%` }}
             />
-            <img
-              src={getIcon(title)}
-              alt={title}
-              className=" w-[25px] h-[25px] rounded-3xl relative z-1"
-            />
-            <span className="relative ml-2 mr-auto z-1">{title}</span>
+            {SHOW_LEAGUE_ICON && (
+              <>
+                <img
+                  src={getIcon(title)}
+                  alt={title}
+                  className=" w-[25px] h-[25px] rounded-3xl relative z-1"
+                />
+                <span className="relative ml-2 mr-auto z-1">{title}</span>
+              </>
+            )}
+
+            {!SHOW_LEAGUE_ICON && (
+              <span className="relative mr-auto text-sm z-1">{title}</span>
+            )}
 
             <svg
               xmlns="http://www.w3.org/2000/svg"

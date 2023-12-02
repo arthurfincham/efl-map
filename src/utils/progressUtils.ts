@@ -31,3 +31,10 @@ export const getProgress = (): SavedProgress => {
     position,
   };
 };
+
+export const clearProgress = () => {
+  if (window.confirm('Are you sure you want to start over?')) {
+    window.localStorage.removeItem('efl-map-progress');
+    window.localStorage.removeItem('efl-map-location');
+  }
+};
