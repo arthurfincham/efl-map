@@ -1,5 +1,6 @@
 import { Disclosure, Transition } from '@headlessui/react';
 import ClubRow from './ClubRow';
+import { getIcon } from '../utils/assetUtils';
 
 interface LeagueGroupProps {
   title: string;
@@ -66,16 +67,3 @@ export default function LeagueGroup({
     </Disclosure>
   );
 }
-
-const getIcon = (title: string) => {
-  switch (title) {
-    case 'Premier League':
-      return '/PremierLeague.svg';
-    case 'Championship':
-      return '/Championship.svg';
-    case 'League One':
-      return '/LeagueOne.svg';
-    default:
-      return '/LeagueTwo.svg';
-  }
-};

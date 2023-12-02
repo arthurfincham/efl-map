@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FullClubList, InputMatchList } from '../data';
+import GameComplete from './GameComplete';
 
 const FLAT_ALTERNATIVES_ARR = InputMatchList.map((club) =>
   club.alternatives.map((alt) => alt.toLowerCase())
@@ -7,9 +8,14 @@ const FLAT_ALTERNATIVES_ARR = InputMatchList.map((club) =>
 interface DashProps {
   addClubToMap: (club: IFootballClub) => void;
   clubsInMapIds: string[];
+  gameCompleted: boolean;
 }
 
-export default function Dash({ addClubToMap, clubsInMapIds }: DashProps) {
+export default function Dash({
+  addClubToMap,
+  clubsInMapIds,
+  gameCompleted,
+}: DashProps) {
   const [inputValue, setInputValue] = useState('');
 
   const [triggerExistingClub, setTriggerExistingClub] = useState(false);
@@ -44,13 +50,15 @@ export default function Dash({ addClubToMap, clubsInMapIds }: DashProps) {
 
   useEffect(() => {
     if (triggerExistingClub) {
-      const timer1 = setTimeout(() => setTriggerExistingClub(false), 900);
+      const timer1 = setTimeout(() => setTriggerExistingClub(false), 300);
 
       return () => {
         clearTimeout(timer1);
       };
     }
   }, [triggerExistingClub]);
+
+  if (gameCompleted) return <GameComplete />;
 
   return (
     <div className="left-1/2 absolute -translate-x-1/2 top-[100px]  min-w-[300px] h-[50px]   z-[10000] ">

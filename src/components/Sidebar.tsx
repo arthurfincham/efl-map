@@ -32,7 +32,7 @@ export default function Sidebar({ clubsInMap, panToClub }: SidebarProps) {
         ></rect>
       </svg>
       <div className="flex flex-col items-end justify-center h-[120px] p-4 w-full relative z-1 pr-[15px] pb-0">
-        <h1 className="mb-2 text-4xl font-bold">EFL Challenge</h1>
+        <h1 className="mb-2 text-4xl font-bold">EFL 23/24</h1>
         <div className="flex w-full border border-gray-300 h-[40px] bg-white justify-end items-center rounded-lg  px-3  text-right text-sm font-medium text-gray-500  my-1 relative overflow-hidden ml-4">
           <div
             className="absolute left-0 z-0 h-full bg-purple-200"

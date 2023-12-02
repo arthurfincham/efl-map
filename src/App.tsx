@@ -15,11 +15,17 @@ const App = () => {
 
   const [zoomLevel, setZoomLevel] = useState(14);
 
+  const [gameCompleted, setGameCompleted] = useState(false);
+
   const handleAddToMap = (club: IFootballClub) => {
     updateProgress([...clubsInMapIds, club.id], club.coords);
     setClubsInMap([...clubsInMap, club]);
     flyToStadium(club.coords, 14);
   };
+
+  useEffect(() => {
+    if (clubsInMapIds.length === 92) setGameCompleted(true);
+  }, [clubsInMapIds]);
 
   useEffect(() => {
     const { clubs, position } = getProgress();
@@ -38,6 +44,7 @@ const App = () => {
         <Dash
           addClubToMap={(club) => handleAddToMap(club)}
           clubsInMapIds={clubsInMapIds}
+          gameCompleted={gameCompleted}
         />
         <Map
           clubsInMap={clubsInMap}
