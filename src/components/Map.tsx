@@ -21,6 +21,7 @@ export default function Map({
       scrollWheelZoom={true}
       minZoom={7}
       maxZoom={16}
+      zoomControl={false}
       className="map-container"
     >
       <TileLayer

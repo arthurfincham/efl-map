@@ -18,8 +18,8 @@ const App = () => {
   const [gameCompleted, setGameCompleted] = useState(false);
 
   const handleAddToMap = (club: IFootballClub) => {
-    updateProgress([...clubsInMapIds, club.id], club.coords);
-    setClubsInMap([...clubsInMap, club]);
+    updateProgress([club.id, ...clubsInMapIds ], club.coords);
+    setClubsInMap([club, ...clubsInMap ]);
     flyToStadium(club.coords, 14);
   };
 
