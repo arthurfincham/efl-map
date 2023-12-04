@@ -1,4 +1,4 @@
-import { Disclosure, Transition } from '@headlessui/react';
+import { Disclosure } from '@headlessui/react';
 import ClubRow from './ClubRow';
 import { getIcon } from '../utils/assetUtils';
 

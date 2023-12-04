@@ -1,6 +1,6 @@
 import { MapProps } from './Map';
 import L from 'leaflet';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Marker, Popup, useMapEvents } from 'react-leaflet';
 
 export default function MapComponents({
