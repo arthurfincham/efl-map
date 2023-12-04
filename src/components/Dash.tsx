@@ -61,7 +61,7 @@ export default function Dash({
   if (gameCompleted) return <GameComplete />;
 
   return (
-    <div className="left-1/2 absolute -translate-x-1/2 top-[100px]  min-w-[300px] h-[50px] z-[10000] ">
+    <div className="left-1/2 absolute -translate-x-1/2 top-[15vh] w-full sm:max-w-[300px] min-w-[300px] h-[50px] z-[1000] px-4 pr-16" onClick={(e) => e.stopPropagation()}>
       <input
         type="text"
         className={`w-full h-full px-4 py-2 font-bold border-2 shadow-xl text-gray-900 border-gray-800 rounded-3xl bg-white focus:outline-black ${
@@ -71,6 +71,7 @@ export default function Dash({
         value={inputValue}
         onChange={handleInputChange}
       />
+
     </div>
   );
 }

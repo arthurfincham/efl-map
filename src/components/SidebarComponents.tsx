@@ -29,16 +29,18 @@ export const SidebarBackground = () => {
 export const SidebarMobileToggle = ({ isExpanded, setIsExpanded }) => {
   return (
     <div
-      className="absolute top-[-15px] z-[9] w-[90%] h-[30px] transform -translate-x-1/2 -translate-y-1/2 bg-gray-100 border rounded-t-md sm:hidden left-1/2 flex justify-center items-center"
+      className={` top-[-40px] absolute w-12 right-2 z-[9] h-[40px] bg-gray-100 border border-b-0 rounded-t-md sm:hidden flex justify-center items-center stroke-gray-800`}
       onClick={() => setIsExpanded(!isExpanded)}
     >
+
+      {/* <SidebarBackground /> */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`${isExpanded ? 'rotate-180 transform' : ''} w-6 h-6`}
+        className={`${isExpanded ? 'rotate-180  transform' : ''} w-6 h-6 stroke-gray-800`}
       >
         <path
           strokeLinecap="round"
