@@ -4,6 +4,8 @@ import Sidebar from './components/Sidebar';
 import Map from './components/Map';
 import { getProgress, updateProgress } from './utils/progressUtils';
 
+export const STADIA = true
+
 const App = () => {
   const position = { lat: 51.5, lng: -0.13 };
 
@@ -17,8 +19,10 @@ const App = () => {
 
   const [gameCompleted, setGameCompleted] = useState(false);
 
+  const [groupByLeague, setGroupByLeague] = useState(true);
+
   const handleAddToMap = (club: IFootballClub) => {
-    updateProgress([club.id, ...clubsInMapIds ], club.coords);
+    updateProgress([club.id, ...clubsInMapIds ], club.coords, groupByLeague);
     setClubsInMap([club, ...clubsInMap ]);
     flyToStadium(club.coords, 14);
   };
@@ -28,9 +32,10 @@ const App = () => {
   }, [clubsInMapIds]);
 
   useEffect(() => {
-    const { clubs, position } = getProgress();
+    const { clubs, position, sortByLeague } = getProgress();
     if (clubs) setClubsInMap(clubs);
     if (position) setMapPosition(position);
+    if (sortByLeague !== null) setGroupByLeague(sortByLeague);
   }, []);
 
   const flyToStadium = (coords: ICoordinates, zoom: number) => {
@@ -56,6 +61,8 @@ const App = () => {
       <Sidebar
         clubsInMap={clubsInMap}
         panToClub={(coords) => flyToStadium(coords, 14)}
+        groupByLeague={groupByLeague}
+        setGroupByLeague={setGroupByLeague}
       />
     </div>
   );

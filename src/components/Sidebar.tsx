@@ -13,12 +13,14 @@ import ClubRow from './ClubRow';
 interface SidebarProps {
   clubsInMap: IFootballClub[];
   panToClub: (coords: ICoordinates) => void;
+  groupByLeague: boolean;
+  setGroupByLeague: (bool: boolean) => void;
 }
 
-export default function Sidebar({ clubsInMap, panToClub }: SidebarProps) {
+export default function Sidebar({ clubsInMap, panToClub, groupByLeague, setGroupByLeague }: SidebarProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const [groupByLeague, setGroupByLeague] = useState(true);
+  
 
   const toggleSort = () => {
     setGroupByLeague(!groupByLeague);
@@ -28,9 +30,9 @@ export default function Sidebar({ clubsInMap, panToClub }: SidebarProps) {
     <div
       className={` ${
         isExpanded ? 'h-[100%] ' : 'h-[30vh]'
-      } fixed sm:min-h-screen sm:border-t-0 sm:border-l max-h-[calc(85vh-60px)] sm:min-w-[320px] sm:relative bottom-0 left-0 z-[1000] w-full   transition-all duration-300 transform flex flex-col-reverse  sm:top-0  bg-white shadow-lg`}
+      } fixed sm:min-h-screen sm:border-t-0 sm:border-l max-h-[calc(85vh-60px)] sm:min-w-[320px] sm:relative bottom-0 left-0 z-[1000] w-full   transition-all duration-300 transform flex flex-col-reverse  sm:top-0  sm:flex-col bg-white shadow-lg`}
     >
-      <SidebarBackground />.
+      <SidebarBackground />
       <SidebarMobileToggle
         isExpanded={isExpanded}
         setIsExpanded={setIsExpanded}
@@ -38,8 +40,8 @@ export default function Sidebar({ clubsInMap, panToClub }: SidebarProps) {
       {/* SIDEBAR HEADER */}
       <div className={` ${
         isExpanded ? 'bottom-0' : '-bottom-full'
-      } flex flex-col-reverse sm:flex-col items-end  transition-all duration-400 h-100px sm:h-[120px] justify-between p-4 w-full fixed bg-white  z-10 pr-[15px] sm:pb-0 border-t`}>
-        <div className="flex gap-4 items-center justify-between w-full h-[40px]">
+      } flex flex-col-reverse sm:flex-col  sm:relative items-end  transition-all duration-400 h-100px sm:h-[120px] justify-between p-4 w-full fixed bg-white sm:bg-transparent sm:border-t-0 sm:top-0  sm:pt-0 z-10 pr-[15px] sm:pb-2 border-t`}>
+        <div className="flex gap-4 items-center justify-between w-full sm:pt-4 h-[40px]">
           <ClearProgressButton clearProgress={clearProgress} />
           <ToggleSortButton toggleSort={toggleSort} />
           <h1 className="mb-2 ml-auto text-4xl font-bold text-gray-800">EFL 23/24</h1>

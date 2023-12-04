@@ -475,7 +475,7 @@ export const FullClubList: IFootballClub[] = [
     id: '602bd445',
     name: 'Queens Park Rangers',
     alternativeNames: ['Queens Park Rangers', 'QPR'],
-    stadium: 'Kiyan Prince Foundation Stadium',
+    stadium: 'Loftus Road',
     league: 'EFL Championship',
     coords: {
       lat: 51.509166666,
@@ -1743,4 +1743,8 @@ export const FullClubList: IFootballClub[] = [
 
 export const InputMatchList = FullClubList.map((club) => {
   return { id: club.id, alternatives: club.alternativeNames };
+});
+
+export const StadiaMatchList = FullClubList.map((club) => {
+  return { id: club.id, alternatives: [club.stadium] };
 });
