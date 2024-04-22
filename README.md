@@ -1,15 +1,11 @@
-query
-SELECT ?club ?clubLabel ?venue ?venueLabel ?coordinates
-WHERE {
-?club wdt:P31 wd:Q476028 .
-?club wdt:P115 ?venue .
-?club wdt:P118 ?league .
-?venue wdt:P625 ?coordinates .
+# EFL Challenge
 
-FILTER(?league IN (wd:Q9448, wd:Q19510, wd:Q19565, wd:Q48837))
+Map-based quiz on your knowledge of EFL Football Clubs. Can you name all 92?
 
-    SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+[Find it out here](https://efl-map.vercel.app/)
 
-}
-GROUP BY ?club ?clubLabel ?venue ?venueLabel ?coordinates
-LIMIT 500
+Built with:
+
+- React & Tailwind CSS
+- Leaflet/OpenStreetMaps
+- Vite
