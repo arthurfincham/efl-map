@@ -1,10 +1,10 @@
-import { useEffect,  useState } from 'react';
+import { useEffect, useState } from 'react';
 import Dash from './components/Dash';
 import Sidebar from './components/Sidebar';
 import Map from './components/Map';
 import { getProgress, updateProgress } from './utils/progressUtils';
 
-export const STADIA = true
+export const STADIA = false;
 
 const App = () => {
   const position = { lat: 51.5, lng: -0.13 };
@@ -22,8 +22,8 @@ const App = () => {
   const [groupByLeague, setGroupByLeague] = useState(true);
 
   const handleAddToMap = (club: IFootballClub) => {
-    updateProgress([club.id, ...clubsInMapIds ], club.coords, groupByLeague);
-    setClubsInMap([club, ...clubsInMap ]);
+    updateProgress([club.id, ...clubsInMapIds], club.coords, groupByLeague);
+    setClubsInMap([club, ...clubsInMap]);
     flyToStadium(club.coords, 14);
   };
 

@@ -7,9 +7,7 @@ const FLAT_ALTERNATIVES_ARR = InputMatchList.map((club) =>
   club.alternatives.map((alt) => alt.toLowerCase())
 ).flat();
 
-
 const FLAT_STADIA = FullClubList.map((club) => club.stadium.toLowerCase());
-
 
 interface DashProps {
   addClubToMap: (club: IFootballClub) => void;
@@ -22,7 +20,6 @@ export default function Dash({
   clubsInMapIds,
   gameCompleted,
 }: DashProps) {
-
   const SEARCH_NAMES = STADIA ? FLAT_STADIA : FLAT_ALTERNATIVES_ARR;
 
   const INPUT_LIST = STADIA ? StadiaMatchList : InputMatchList;
@@ -74,7 +71,10 @@ export default function Dash({
   const placeholder = STADIA ? 'Find a stadium' : 'Find a club';
 
   return (
-    <div className="left-1/2 absolute -translate-x-1/2 top-[15vh] w-full sm:max-w-[300px] min-w-[300px] h-[50px] z-[1000] px-4 pr-16" onClick={(e) => e.stopPropagation()}>
+    <div
+      className="left-1/2 absolute -translate-x-1/2 top-[15vh] w-full sm:max-w-[300px] min-w-[300px] h-[50px] z-[1000] px-4 pr-16"
+      onClick={(e) => e.stopPropagation()}
+    >
       <input
         type="text"
         className={`w-full h-full px-4 py-2 font-bold border-2 shadow-xl text-gray-900 border-gray-800 rounded-3xl bg-white focus:outline-black ${
@@ -84,7 +84,6 @@ export default function Dash({
         value={inputValue}
         onChange={handleInputChange}
       />
-
     </div>
   );
 }
